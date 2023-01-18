@@ -15,7 +15,7 @@ class PicwishServiceProvider extends ServiceProvider {
     public function boot(){
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/picwish.php' => config_path('picwish.php'),
+                __DIR__.'/../../config/picwish.php' => config_path('picwish.php'),
             ], 'config');
         }
     }
